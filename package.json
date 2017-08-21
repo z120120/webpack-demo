@@ -1,0 +1,37 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "hello world!",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.5",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.11.2",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^2.30.1",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^1.15.0",
+    "webpack-dev-server": "^1.5.0"
+  },
+  "scripts": {
+    "dev_linux":"WEBPACKENV=dev webpack-dev-server --inline --port 8088",
+    "dev":"set WEBPACKENV=dev && webpack-dev-server --inline --port 8088",
+    "dist_linux":"WEBPACKENV=online webpack-dev-server -p",
+    "dist":"set WEBPACKENV=online && webpack-dev-server -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/z120120/webpack-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/z120120/webpack-demo/issues"
+  },
+  "homepage": "https://github.com/z120120/webpack-demo#readme"
+}
