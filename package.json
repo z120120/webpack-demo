@@ -4,6 +4,8 @@
   "description": "hello world!",
   "main": "index.js",
   "dependencies": {
+    "font-awesome": "^4.7.0",
+    "hogan": "^1.0.2",
     "jquery": "^3.2.1"
   },
   "devDependencies": {
@@ -18,10 +20,10 @@
     "webpack-dev-server": "^1.5.0"
   },
   "scripts": {
-    "dev_linux":"WEBPACKENV=dev webpack-dev-server --inline --port 8088",
-    "dev":"set WEBPACKENV=dev && webpack-dev-server --inline --port 8088",
-    "dist_linux":"WEBPACKENV=online webpack-dev-server -p",
-    "dist":"set WEBPACKENV=online && webpack-dev-server -p"
+    "dev_linux": "WEBPACKENV=dev webpack-dev-server --inline --port 9000",
+    "dev": "set WEBPACKENV=dev && webpack-dev-server --inline --port 9000",
+    "dist_linux": "WEBPACKENV=online webpack-dev-server -p",
+    "dist": "set WEBPACKENV=online && webpack-dev-server -p"
   },
   "repository": {
     "type": "git",
